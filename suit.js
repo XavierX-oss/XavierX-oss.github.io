@@ -23,15 +23,15 @@ while ( req ) {
         hasil = 'Seri!';
     } else if (player == 'batu') {
         if (comp == 'kertas') {
-            hasil = 'Menang!';
-        } else {
             hasil = 'Kalah!';
+        } else {
+            hasil = 'Menang!';
         }
     } else if (player == 'kertas') {
         // Ternary atau versi pendek
-        hasil = (comp == 'batu') ? 'Kalah' : 'Menang';
+        hasil = (comp == 'batu') ? 'Menang' : 'Kalah';
     } else if (player == 'gunting') {
-        hasil = (comp == 'kertas') ? 'Kalah' : 'Menang';
+        hasil = (comp == 'kertas') ? 'Menang' : 'Kalah';
     } else {
         hasil = 'Memasukkan pilihan yang salah!';
     }
